@@ -1,0 +1,94 @@
+body {
+  background-color: rgb(151, 43, 94);
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.like {
+  
+  cursor: pointer;
+  
+ 
+}
+
+.like [type="checkbox"] {
+  display: none;
+  
+  
+  
+}
+
+.heart {
+  padding: 20px;
+  font-size: 40px;
+  color: #faf2f7;
+  user-select: none;
+  
+  
+}
+
+.like [type="checkbox"]:checked ~ .heart {
+  animation-name: heart;
+  animation-duration: .6s;
+  animation-fill-mode: forwards;
+  
+ 
+}
+
+@keyframes heart {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    color: rgb(197, 6, 95);
+    transform: rotate(180deg);
+  }
+}
+
+.ripple {
+ width: 85px;
+  height: 85px;
+  background: rgb(240, 112, 212);
+  border-radius: 50%;
+  transform: scale(0);
+  
+
+  
+  
+}
+
+div {
+  color: rgb(248, 242, 242);
+  text-align: center;
+  font-size: 50px;
+  
+  
+}
+.like [type="checkbox"]:checked ~ .ripple {
+  animation-name: ripple;
+  animation-duration: .6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ripple {
+  5% {
+    transform: scale(0);
+    
+  }
+  70% {
+    transform: scale(1.1);
+    transform: rotate(180deg);
+    
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+}
