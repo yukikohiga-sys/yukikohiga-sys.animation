@@ -15,9 +15,21 @@ body {
      margin-left: auto;
      margin-right: auto;
      align-items: center;
-     padding-top: 32px;
      padding-bottom: 30px;
    }
+   .footer-text{
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+   }
+
+   footer {
+    padding: 64px 0;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, .8);
+    color: #98969c;
+    text-align: center;
+  }
    
    
    .container1 {
@@ -105,7 +117,7 @@ body {
     border: none;
     background: rgba(0, 0, 0, .8);
     color: #fff;
-    font-size: 24px;
+    font-size: 34px;
     padding: 0 8px 4px;
     cursor: pointer;
   }
@@ -128,7 +140,7 @@ body {
   }
   
   nav {
-    margin-top: 16px;
+    margin-top: 36px;
     text-align: center;
   }
   
@@ -138,11 +150,12 @@ body {
   
   nav button {
     border: none;
-    width: 16px;
-    height: 16px;
+    width: 26px;
+    height: 26px;
     background: #ddd;
     border-radius: 50%;
     cursor: pointer;
+    margin-bottom: 18px;
   }
   
   nav .current {
@@ -150,27 +163,131 @@ body {
   }
 
    
+  /* 吹き出し */
 
-  .works {
-    width: 180px;
-    margin-left: auto;
-    margin-right: auto;
+  .fukidasi-container {
+    padding: 32px;
+    
+  }
+  
+  .messages {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+  }
+  .messages li {
+    display: flex;
+  }
+  /* .messages li + li {
+    margin-top: 32px;
+  } */
+  
+  li.right-side {
+    flex-direction: row-reverse;
+  }
+  
+  .pic {
+    /* background: pink; */
+    width: 80px;
+    text-align: center;
+  }
+  
+  .pic img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+  }
+  
+  .text {
+    background:#efefef ;
+    border-radius: 8px;
+    padding: 16px 24px;
+    max-width: 60%;
+    line-height: 1.8;
+    position: relative;
+  }
+  
+  .text::before {
+    content: '';
+    width: 0;
+    height: 0;
+    /* border: 8px solid #fff; */
+    border: 8px solid transparent;
+    position: absolute;
+  }
+  
+  
+  
+  .right-side .text::before {
+    top: 22px;
+    right: -16px;
+    border-left-color: #efefef;
+  }
+
+/* オーディオタグがあるあたり */
+.works> figure  {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
-.works > h1 {
+
+
+
+/* トップページ最初の見出し画像 */
+.works-top {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;  
+}
+.works-top > h1 {
     font-weight: normal;
     font-size: 18px;
     text-align: center;
-    margin-top: 80px;
-    margin-bottom: 0px;
+    margin-top: 34px;
+    margin-bottom: 30px;
+}
+.works-top> section  {
+  margin-bottom: 60px;
 }
 
+/* トップページ次の見出し画像 */
+.works-top-a {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.works-top-a > h1 {
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 34px;
+  margin-bottom: 30px;
+}
+.works-top-a> section  {
+margin-bottom: 60px;
+}
+
+
+.works {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.works img{
+    margin-bottom: 20px;
+}
+.works > h1 {
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 26px;
+    margin-bottom: 0px;
+}
 
   .works> section  {
     margin-bottom: 60px;
 }
-  .works> figure  {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
+ 
+
 
