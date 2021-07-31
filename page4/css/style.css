@@ -19,13 +19,6 @@ body {
        padding-bottom: 30px;
      }
      
-     footer {
-      padding: 64px 0;
-      margin-top: 20px;
-      background: rgba(0, 0, 0, .8);
-      color: #98969c;
-      text-align: center;
-    }
      
      .container1 {
          /* background-color:green; */
@@ -68,9 +61,11 @@ body {
 
 .container2 {
   /* background-color:green; */
+  
   margin-left: auto;
   margin-right: auto;
-  align-items: center;  
+  align-items: center;
+  
 }
 
 .image2 {
@@ -84,24 +79,23 @@ body {
 .image2 img {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0px;
   align-items: center;
   cursor: pointer;
   user-select: none;
 }
+
+
 
 .image3 {
   width: 180px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
-  align-items: center;
   user-select: none;
   
 }
 
 .image3 img {
-  margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -238,5 +232,3 @@ input[type="button"] {
         margin-right: auto;
         text-align: center;
     }
-
-   
