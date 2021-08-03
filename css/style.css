@@ -15,6 +15,7 @@ body {
      margin-left: auto;
      margin-right: auto;
      align-items: center;
+     padding-top: 32px;
      padding-bottom: 30px;
    }
    .footer-text{
@@ -60,6 +61,7 @@ body {
    }
    .info p {
        margin: 0;
+       font-size: 14px;
        margin-bottom: 16px;
    }
    /* .info ul {
@@ -74,7 +76,7 @@ body {
     */
 
    
-
+/* このあたりからカルーセル */
 
 .carousel {
     width: 80%;
@@ -164,24 +166,23 @@ body {
 
    
   /* 吹き出し */
-
   .fukidasi-container {
     padding: 32px;
-    
   }
   
   .messages {
     margin: 0;
     padding: 0;
     list-style: none;
-    
   }
+  
   .messages li {
     display: flex;
   }
-  /* .messages li + li {
+  
+  .messages li + li {
     margin-top: 32px;
-  } */
+  }
   
   li.right-side {
     flex-direction: row-reverse;
@@ -194,13 +195,13 @@ body {
   }
   
   .pic img {
-    width: 58px;
-    height: 58px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
   }
   
   .text {
-    background:#efefef ;
+    background: rgb(235, 240, 245);
     border-radius: 8px;
     padding: 16px 24px;
     max-width: 60%;
@@ -217,58 +218,122 @@ body {
     position: absolute;
   }
   
-  
+  .left-side .text::before {
+    top: 12px;
+    left: -16px;
+    border-right-color: rgb(235, 240, 245);
+  }
   
   .right-side .text::before {
-    top: 22px;
+    top: 12px;
     right: -16px;
-    border-left-color: #efefef;
+    border-left-color:rgb(235, 240, 245);
   }
+  
 
-/* オーディオタグがあるあたり */
-.works> figure  {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-
-
-/* トップページ最初の見出し画像 */
+  /* トップページ最初の見出し画像 */
+  
 .works-top {
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;  
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;  
 }
 .works-top > h1 {
-    font-weight: normal;
-    font-size: 18px;
-    text-align: center;
-    margin-top: 34px;
-    margin-bottom: 30px;
-}
-.works-top> section  {
-  margin-bottom: 60px;
-}
-
-/* トップページ次の見出し画像 */
-.works-top-a {
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.works-top-a > h1 {
   font-weight: normal;
   font-size: 18px;
   text-align: center;
   margin-top: 34px;
   margin-bottom: 30px;
 }
-.works-top-a> section  {
-margin-bottom: 60px;
+
+
+/* トップページバッハの写真画像 */
+.works-top-a {
+   width: 450px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+  }
+.works-top-a > h1 {
+  font-weight: normal;
+  font-size: 18px;
+  margin-top: 34px;
+  margin-bottom: 30px;
+}
+.works-top-a  img{
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  }
+  
+  /* オーディオタグがあるあたり */
+  .works-score{
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+   }
+.works-score > h1 {
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 
+  .works-score> section  {
+    margin-bottom: 60px;
+}
+  .works-score> figure  {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+  
+
+  /* つづきを読む */ 
+  .next-button {
+    
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 140px;
+  
+}
+
+.next-button > a {
+  text-decoration: none; 
+  cursor: pointer;
+}  
+
+
+.works{
+   width: 450px;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+} 
+  
+.works > h1 {
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+/* .works  img {
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  } */
+
+
+
+
+/* 
 .works {
     width: 200px;
     margin-left: auto;
@@ -281,13 +346,13 @@ margin-bottom: 60px;
     font-weight: normal;
     font-size: 16px;
     text-align: center;
-    margin-top: 26px;
+    margin-top: 50px;
     margin-bottom: 0px;
 }
 
   .works> section  {
     margin-bottom: 60px;
 }
- 
+  */
 
 

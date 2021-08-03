@@ -205,9 +205,17 @@ input[type="button"] {
     
     
     
+    /* つづきを読むリンク */
+.next-button {
+  margin: auto;
+  text-align: center;
+  margin-top: 40px;
+  cursor: pointer;
+}
     
-    
-    
+.next-button > a {
+  text-decoration: none; 
+}  
     
     
     

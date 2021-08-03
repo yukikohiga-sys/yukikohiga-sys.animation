@@ -249,7 +249,13 @@ body {
       text-align: center;
   }
   
-  
+  /* つづきを読むリンク */
+.works{
+  margin: auto;
+  text-align: center;
+}
+
+
   /* フッターの直前のあたり */
     .works {
       width: 180px;

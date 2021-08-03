@@ -69,3 +69,14 @@
     moveSlides();
   });
 }
+
+
+// 音の再生
+function audioPlay(){
+  document.getElementById("audio").play();
+}
+
+//再生を停止
+function audioPause(){
+  document.getElementById("audio").pause();
+}

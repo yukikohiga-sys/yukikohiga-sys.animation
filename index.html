@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Carousel</title>
+  <title>バッハとお散歩</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
   <body>
@@ -15,11 +15,8 @@
            </div>
         <div class="info">
               <h1>バッハとお散歩</h1>
-              <p>音楽家バッハのページ</p> 
-      <!--<ul> -->
-              
-                
-             <!-- </ul> -->
+              <p>バッハとプログラミングって何か関係あるのかな？なーんてことをゆる～く考えながら今日もお散歩☆</p> 
+      <!-- ここにulタグがあったけど下のulにより不具合下のulにid着けるとよいと後にわかる -->
           </div>
         </div>
   </header>
@@ -33,7 +30,7 @@
 <section class="carousel">
     <div class="container">
       <ul>
-        <li><img src="img/pic1.png"></li>
+        <li><img src="img/pppic1.png"></li>
         <li><img src="img/pic2.png"></li>
         <li><img src="img/pic3.png"></li>
         <li><img src="img/pic4.png"></li>
@@ -49,51 +46,65 @@
 
 
 <section class="works-top-a">
-    <h1>ゆきにゃあはバッハが大好きです。ある日、たまたまBWV1087「１４のカノン」という曲に出会うことがありました。それはあの有名な肖像画、</h1>
+    <h1>ゆきにゃあはバッハが大好きです。ある日、たまたまあの有名な肖像画の中でバッハがこちらに差し出している紙は、</h1>
 
-  　<img src="img\bach.png" 　width="160" height="200" alt="肖像画の手元の画像です"><h1>なんとなく目にしたことはあったけれど、バッハがこちらに差し出しているものは楽譜であり、「１４のカノン」の3曲目だということを知りました。曲はすべて短くて、全部で14曲あります。
+  　<img src="img\bach.png" 　width="280" height="240" alt="肖像画の手元の画像です"><h1>れっきとした楽譜で、それはBWV1087「１４のカノン」という曲だったんだ！と知りました。
   　</h1>
 </section>
 
+<!-- オーディオ -->
+<div class="works-score">
+  <!-- <div class="image3"> -->
+        <img src="img/score.img1.jpg"  width="280" height="240" alt="bachのbwv1087の13番の楽譜です">
+  
+      <audio id="audio" preload="auto">
+           <source src="img/canon.13.mp3" type="audio/mp3">
+           <p>※ご利用のブラウザでは再生することができません。</p>
+      </audio>
+            <input type="button" onclick="audioPlay()" value="再生">
+            <input type="button" onclick="audioPause()" value="停止"> 
+            <p>こんな曲だよ</p>
+   </div>
+</div>
 
-
-  <section class="works">
+  <!-- <section class="works-top-a">
     　　<img src="img\score.img1.jpg" width="180" 　　　height="100" alt="bachのbwv1087の13番の楽譜です">
-      <!-- <h1>「１４のカノン」のテーマとなる８音
-        バッハがこちらに向かって差し出してる楽譜の一番下に書いてある音でもあります</h1> -->
-
-        <figure>
-          <figcaption>こんな曲だよ</figcaption>
-          <audio
-              controls
-              src="img\canon.13.mp3">
+       <figure>
+           <figcaption>こんな曲だよ</figcaption>
+            <audio
+                controls
+                  src="img\canon.13.mp3">
                   Your browser does not support the
                   <code>audio</code> element.
-          </audio>
+            </audio>
       </figure>
-  </section>   
+  </section>    -->
 
 
 
   <div class="fukidasi-container">
     <ul class="messages">
       
-      <li class="right-side">
+      <li class="left-side">
         <div class="pic">
           <img src="img/neko.icon.png">
         </div>
         <div class="text">
-          いい曲なのにゃ。
+          この楽譜は14曲あるうちの13番目だったのにゃ。いい曲なのにゃ！
         </div>
       </li>
       
     </ul>
   </div>
 
+<!-- つづきを読むリンク -->
+<section class="next-button">
+  <a href="../page4/index.html">つづきを読む➯</a>
+ </section>
   
 
 <section class="works">
-    <h1>バッハがこちらに差し出している楽譜の3段目にもある音、それは「１４のカノン」のテーマとなる８音というものらしかった。</h1>
+    <h1>バッハがこちらに差し出している楽譜の3段目にもある音、それはこんな音</h1>
     <a href="page2/index.html"><img src="img\button2.png" width="180" height="100" alt="肖像画の手元の画像です"></a>
 </section>
 
