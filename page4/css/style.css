@@ -73,6 +73,7 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  user-select: none;
 } 
 
 .works-move > h1 {
@@ -81,6 +82,7 @@ body {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 0px;
+  user-select: none;
 }
 
 .works-move  img {
@@ -90,18 +92,16 @@ body {
   margin-top: 0px;
   margin-bottom: 0px;
   cursor: pointer;
+  user-select: none;
   /* display: inline-block; */
  }
-
-
-
-
 
 
 /* オーディオボタン */
 input[type="button"] {
  
   cursor: pointer;
+  user-select: none;
   
 }
 
@@ -140,74 +140,72 @@ input[type="button"] {
         cursor: pointer;
         user-select: none; */
     }
+/* 吹き出し */
+.fukidasi-container {
+  padding: 32px;
+}
 
+.messages {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
+.messages li {
+  display: flex;
+}
 
+.messages li + li {
+  margin-top: 32px;
+}
 
-     
-     /* チャット風の会話 */
-     .fukidasi-container {
-       /* background-color: palegreen; */
-        padding: 0px;
-        margin-top: 10px;
-        
-      }
-      
-      .messages {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        
-      }
-      
-      .messages li {
-        display: flex;
-      }
-      
-      .messages li + li {
-        margin-top: 32px;
-      }
-      
-      li.right-side {
-        flex-direction: row-reverse;
-      }
-      
-      .pic {
-        /* background: pink; */
-        width: 80px;
-        text-align: center;
-      }
-      
-      .pic img {
-        width: 58px;
-        height: 58px;
-        border-radius: 50%;
-      }
-      
-      .text {
-        background:#f1efef ;
-        border-radius: 8px;
-        padding: 16px 24px;
-        max-width: 60%;
-        line-height: 1.8;
-        position: relative;
-      }
-      
-      .text::before {
-        content: '';
-        width: 0;
-        height: 0;
-        /* border: 8px solid #fff; */
-        border: 8px solid transparent;
-        position: absolute;
-      }
-      
-      .right-side .text::before {
-        top: 12px;
-        right: -16px;
-        border-left-color: #efefef;
-      }
-    
+li.right-side {
+  flex-direction: row-reverse;
+}
+
+.pic {
+  /* background: pink; */
+  width: 80px;
+  text-align: center;
+}
+
+.pic img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.text {
+  background: rgb(235, 240, 245);
+  border-radius: 8px;
+  padding: 16px 24px;
+  max-width: 60%;
+  line-height: 1.8;
+  position: relative;
+}
+
+.text::before {
+  content: '';
+  width: 0;
+  height: 0;
+  /* border: 8px solid #fff; */
+  border: 8px solid transparent;
+  position: absolute;
+}
+
+.left-side .text::before {
+  top: 12px;
+  left: -16px;
+  border-right-color: rgb(235, 240, 245);
+}
+
+.right-side .text::before {
+  top: 12px;
+  right: -16px;
+  border-left-color:rgb(235, 240, 245);
+}
+  
+   
     /* つづきを読む */ 
     .next-button {
       
