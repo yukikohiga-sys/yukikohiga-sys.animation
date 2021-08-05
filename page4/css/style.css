@@ -1,6 +1,6 @@
 body {
     /* background-color: pink; */
-      align-items: center;
+    align-items: center;
       color: #333;
       font-family: Verdana,  sans-serif;
       margin: 0;
@@ -18,149 +18,123 @@ body {
        padding-top: 32px;
        padding-bottom: 30px;
      }
+
+     footer {
+      padding: 64px 0;
+      margin-top: 20px;
+      background: rgba(0, 0, 0, .8);
+      color: #98969c;
+      text-align: center;
+    }
      
      
-     .container1 {
-       /* background-color:green; */
-       width: 400px;
-       margin-left: auto;
-       margin-right: auto;
-       display: flex;
-       align-items: center;
-       
-      }
-      
-      .icon img {
-        border-radius: 40%;
-        border-width: 4px;
-        border-style: solid;
-        border-color: white;
-      }
-      
-      .info {
-        /* background-color:blue; */
-        margin-left: 32px;
-      }
-     
-      .info h1 {
-         font-weight: normal;
-         font-size: 24px;
-         margin: 0;
-        }
-        .info p {
-          /* background-color:blue; */
-          margin: 0;
-          margin-bottom: 14px;
-        }
-        
-        footer {
-         padding: 64px 0;
-         margin-top: 20px;
-         background: rgba(0, 0, 0, .8);
-         color: #98969c;
-         text-align: center;
-       }
-        
-        
-        /* 画像を反転させる */
-
-/* .container2 {
-  background-color:palegoldenrod;
-  display: block;
-} */
-
-.works-move{
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  user-select: none;
-} 
-
-.works-move > h1 {
-  font-weight: normal;
-  font-size: 18px;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 0px;
-  user-select: none;
-}
-
-.works-move  img {
-  font-weight: normal;
-  font-size: 18px;
-  text-align: center;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  cursor: pointer;
-  user-select: none;
-  /* display: inline-block; */
- }
-
-
-/* オーディオボタン */
-input[type="button"] {
- 
-  cursor: pointer;
-  user-select: none;
-  
-}
-
-
-
-  /* 動くスタイル   */
-    .circle1 {
-        margin-left: auto;
+    .container1 {
+      /* background-color:green; */
+         width: 400px;
+         margin-left: auto;
          margin-right: auto;
+         display: flex;
+         align-items: center;
+         
+        }
+        
+        .icon img {
+          border-radius: 40%;
+          border-width: 4px;
+          border-style: solid;
+          border-color: white;
+     }
+     
+     .info {
+       /* background-color:blue; */
+       margin-left: 32px;
+      }
+      
+     .info h1 {
+       font-weight: normal;
+       font-size: 24px;
+       margin: 0;
+      }
+      .info p {
+        margin: 0;
+        margin-bottom: 14px;
+     }
+     
+     
+     /* 画像を反転させる */
+
+    .container2 {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      user-select: none;
+      }
+
+
+
+
+
+     .works-move{
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      user-select: none;
+    }  
+
+    
+    .works-move  img {
+      cursor: pointer;
+      user-select: none;
+     }
+
+
+ 
+
+
+/* 動くスタイル   */
+     .circle1 {
+        margin-left: auto;
+        margin-right: auto;
         transform: scale(-1,1);
         transition-duration: 1s;
         user-select: none;
-    } 
+      } 
     
-    .circle2 {
-         margin-left: auto;
-         margin-right: auto;
-         transform: scale(1,-1);
-         transition-duration: 2s;
-         user-select: none;
-         cursor: pointer;
+      .circle2 {
+        transform: scale(1,-1);
+        transition-duration: 2s;
+        user-select: none;
         
-        }
-    
-    .circle3 {
-         margin-left: auto;
-         margin-right: auto;
-         transform: scale(1,-1);
-         transition-duration: 3s;
-         user-select: none;
-         cursor: pointer;
-
-        /* transform: translateX(100px);
+      }
+      
+      .circle3 {
+        margin-left: auto;
+        margin-right: auto;
+        transform: scale(-1,1);
         transition-duration: 1s;
-        transform: rotate(-180deg);
-        cursor: pointer;
-        user-select: none; */
-    }
-/* 吹き出し */
-.fukidasi-container {
-  padding: 32px;
-}
-
-.messages {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.messages li {
+        user-select: none;
+      }
+      
+      /* 吹き出し */
+      .fukidasi-container {
+        padding: 32px;
+      }
+      
+      .messages {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      
+      .messages li {
   display: flex;
 }
 
 .messages li + li {
   margin-top: 32px;
 }
-
 li.right-side {
-  flex-direction: row-reverse;
+flex-direction: row-reverse;
 }
 
 .pic {
@@ -204,41 +178,51 @@ li.right-side {
   right: -16px;
   border-left-color:rgb(235, 240, 245);
 }
-  
-   
-    /* つづきを読む */ 
-    .next-button {
-      
-      text-align: center;
-      margin-top: 60px;
-      
-    }
-    
-    .next-button > a {
-      text-decoration: none; 
-      cursor: pointer;
-    }  
-    
-    
-   .works{
-       text-align: center;
-       margin-left: auto;
-       margin-right: auto;
-    } 
-      
-    .works > h1 {
-        font-weight: normal;
-        font-size: 18px;
-        text-align: center;
-        margin-top: 40px;
-        margin-bottom: 0px;
-    }
 
-    /* .works  img {
+
+
+/* つづきを読むリンク */
+.next-button {
+  margin: auto;
+  text-align: center;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.next-button > a {
+  text-decoration: none; 
+}  
+
+
+
+.works {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* cursor: pointer; */
+  }
+ .works > h1 {
         font-weight: normal;
         font-size: 18px;
         text-align: center;
-        margin-top: 0px;
+        margin-top: 80px;
         margin-bottom: 0px;
-      } */
-    
+      }
+      
+      
+/* .works> section  {
+        margin-bottom: 60px;
+      }
+      
+.scoreimage {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      
+    } */
+    /* オーディオボタン input要素のうちtype属性値がbuttonのものに対して装飾 */
+input[type="button"] {
+ 
+    cursor: pointer;
+  
+    }
