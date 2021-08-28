@@ -1,129 +1,75 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>バッハとお散歩</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svgれんしゅう</title>
+    <link rel ="stylesheet" href="css/styles.css">
 </head>
-  <body>
-    <header>
-        <div class="container1">
-           <div class="icon">
-              <img src="img\neko.top.gif" width="160" height="110" alt="ゆきにゃあのお散歩アイコンです"> 
-           </div>
-        <div class="info">
-              <h1>バッハとお散歩</h1>
-              <p>バッハとプログラミングって何か関係あるのかな？なーんてことをゆる～く考えながら今日もお散歩☆</p> 
-      <!-- ここにulタグがあったけど下のulにより不具合下のulにid着けるとよいと後にわかる -->
-          </div>
-        </div>
-  </header>
+<body>
+  <div class="contents">
+    <div class="svg-wrapper">
+   <svg width="660" height="660" viewBox="0 0 660 660">
 
-  <section class="works-top">
-    <h1>
-    はじめまして。わたしはねこのゆきにゃあと申します。</h1>
-</section>
-
-
-<section class="carousel">
-    <div class="container">
-      <ul>
-        <li><img src="img/pppic1.png"></li>
-        <li><img src="img/pic2.png"></li>
-        <li><img src="img/pic3.png"></li>
-        <li><img src="img/pic4.png"></li>
-      </ul>
+     
+     <g class="gold-button">
+       <circle cx="330" cy="260" r="120" fill="gold"/>
+       <text x="260" y="320"class="gold-text">C</text>
+     </g>
+     
+    <g class="orange-button" id="target3">
+      <circle cx="360" cy="320" r="60" fill="orange"/>
+      <text x="340" y="340"class="orange-text">8</text>
+    </g>
+    
+    <g class="transparent-button">
+     
+      <text x="150" y="200"class="transparent-text">BA</text>
+    </g>
+    
+    <g class="pink-button"id="target2" >
+       <circle cx="180" cy="180" r="40" fill="pink"/>
+       <text x="160" y="200"class="pink-text">1</text>
+    </g>
+   
+    
+    <g class="skyblue-button" id="target1">
+       <circle cx="180" cy="180" r="40" fill="skyblue"/>
+       <text x="160" y="200"class="skyblue-text"id="text1">B</text>
+    </g>
   
-      <button id="prev">&laquo;</button>
-      <button id="next">&raquo;</button>
-    </div>
-  
-    <nav>
-    </nav>
-</section>
-
-
-<section class="works-top-a">
-    <h1>ゆきにゃあはバッハが大好きです。ある日、たまたまあの有名な肖像画の中でバッハがこちらに差し出している紙は、</h1>
-
-  　<img src="img\bach.png" 　width="280" height="240" alt="肖像画の手元の画像です"><h1>れっきとした楽譜で、それはBWV1087「１４のカノン」という曲だったんだ！と知りました。
-  　</h1>
-</section>
-
-<!-- オーディオ -->
-<div class="works-score">
-  <!-- <div class="image3"> -->
-        <img src="img/score.img1.jpg"  width="280" height="240" alt="bachのbwv1087の13番の楽譜です">
-  
-      <audio id="audio" preload="auto">
-           <source src="img/canon.13.mp3" type="audio/mp3">
-           <p>※ご利用のブラウザでは再生することができません。</p>
-      </audio>
-            <input type="button" onclick="audioPlay()" value="再生">
-            <input type="button" onclick="audioPause()" value="停止"> 
-            <p>こんな曲だよ</p>
-   </div>
+   </svg>
+  </div>
 </div>
 
-  <!-- <section class="works-top-a">
-    　　<img src="img\score.img1.jpg" width="180" 　　　height="100" alt="bachのbwv1087の13番の楽譜です">
-       <figure>
-           <figcaption>こんな曲だよ</figcaption>
-            <audio
-                controls
-                  src="img\canon.13.mp3">
-                  Your browser does not support the
-                  <code>audio</code> element.
-            </audio>
-      </figure>
-  </section>    -->
+   <script>
+     ['target1', 'target2', 'target3'].forEach((target) => {
+  document.getElementById(target).addEventListener('click', function() {
+
+    this.classList.toggle('moved');
+  });
+});
+
+     document.getElementById('target1').addEventListener('click', function update() {
+         document.getElementById('text1').textContent = '2';
+         
+         
+  });
+
+   
 
 
 
-  <div class="fukidasi-container">
-    <ul class="messages">
-      
-      <li class="left-side">
-        <div class="pic">
-          <img src="img/neko.icon.png">
-        </div>
-        <div class="text">
-          この楽譜は14曲あるうちの13番目だったのにゃ。いい曲なのにゃ！
-        </div>
-      </li>
-      
-    </ul>
-  </div>
+    // (function() {
+    //   'use strict';
 
-<!-- つづきを読むリンク -->
-<section class="next-button">
-  <a href="../page2/index.html">つづきを読む➯</a>
- </section>
-  
-
-<section class="works">
-    <h1>バッハがこちらに差し出している楽譜の3段目にもある音、それはこんな音</h1>
-    <a href="page2/index.html"><img src="img\button2.png" width="180" height="100" alt="肖像画の手元の画像です"></a>
-</section>
-
-<section class="works">
-    <h1>14曲のうちの１曲目です。テーマとなる８音を後ろから反対に演奏しているらしいのです。</h1>
-    <a href="page3/index.html"><img src="page4\img\button.3.png" width="180" height="100" alt="カニのような楽譜イメージ画像です"></a>
-</section>
-
-<section class="works">
-    <h1>14曲のうちの３曲目です。　上下が逆さまにもなってるらしいのです。反行カノンとも呼ばれているらしい？</h1>
-    <a href="page4/index.html"><img src="page4\img\button.4.png" width="180" height="100" alt="上下逆さまの楽譜イメージ画像です"></a>
-</section>
-
-
-  <script src="js/main.js"></script>
-
-  <footer>
-    <li class="footer-text">y.n.tulip@gmail.com</li>
-  </footer>
+    //   document.getElementById('target1').addEventListener('click', function() {
+    //     this.setAttribute('pink-text', 'pink-button moved');
+    //     this.classList.toggle('moved1');
+    //   });
+    // })();
+   
+  </script>
 </body>
-
 </html>
